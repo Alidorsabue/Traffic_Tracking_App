@@ -1,0 +1,96 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.log
+*.err.log
+*.out.log
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+env/
+.env
+*.db
+*.sqlite
+
+# Flask
+instance/
+.webassets-cache
+
+# Logs
+*.log
+backend/*.log
+backend/backend.log
+backend/backend_error.log
+backend/flask.err.log
+backend/flask.out.log
+
+# Environnements virtuels
+venv/
+.venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Flutter/Dart
+mobile_app/.dart_tool/
+mobile_app/.flutter-plugins
+mobile_app/.flutter-plugins-dependencies
+mobile_app/.pub-cache/
+mobile_app/.pub/
+mobile_app/build/
+mobile_app/.iml
+
+# Android
+mobile_app/android/.gradle/
+mobile_app/android/local.properties
+mobile_app/android/.idea/
+mobile_app/android/*.iml
+mobile_app/android/app/debug/
+mobile_app/android/app/profile/
+mobile_app/android/app/release/
+
+# iOS
+mobile_app/ios/Pods/
+mobile_app/ios/.symlinks/
+mobile_app/ios/Flutter/Flutter.framework
+mobile_app/ios/Flutter/Flutter.podspec
+mobile_app/ios/Flutter/.last_build_id
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.cache
+*.bak
+*.backup
+
+# Fichiers de sauvegarde PostgreSQL
+backend/backups/
+*.sql.backup
+
+# Fichiers de configuration locaux (mais garder .env.example si nécessaire)
+.env.local
+.env.*.local
+
+# Fichiers de tâches planifiées Windows
+task_definition.xml
+
+
+
+
+
+
+
+
