@@ -20,7 +20,6 @@ def init_database():
     try:
         # Connect to default database
         conn = psycopg.connect(**connection_params)
-        conn.set_client_encoding('UTF8')
         conn.autocommit = True
         cur = conn.cursor()
         
