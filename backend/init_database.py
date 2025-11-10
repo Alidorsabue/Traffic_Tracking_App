@@ -11,7 +11,7 @@ def init_database():
 
     connection_params = {
         "host": os.getenv("DB_HOST", "localhost"),
-        "database": os.getenv("DB_MAINTENANCE_DB", "postgres"),
+        "dbname": os.getenv("DB_MAINTENANCE_DB", "postgres"),
         "user": os.getenv("DB_USER", "postgres"),
         "password": os.getenv("DB_PASSWORD", "postgres"),
         "port": int(os.getenv("DB_PORT", "5432")),
@@ -57,3 +57,4 @@ def init_database():
 
 if __name__ == "__main__":
     init_database()
+    
