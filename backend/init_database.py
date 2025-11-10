@@ -7,16 +7,17 @@ from dotenv import load_dotenv
 sys.stdout.reconfigure(encoding='utf-8')
 
 def init_database():
+    load_dotenv()
+
     connection_params = {
         "host": os.getenv("DB_HOST", "localhost"),
         "database": os.getenv("DB_MAINTENANCE_DB", "postgres"),
         "user": os.getenv("DB_USER", "postgres"),
         "password": os.getenv("DB_PASSWORD", "postgres"),
-        "port": int(os.getenv("DB_PORT", "5433")),
+        "port": int(os.getenv("DB_PORT", "5432")),
     }
     
     try:
-        load_dotenv()
         # Connect to default database
         conn = psycopg.connect(**connection_params)
         conn.set_client_encoding('UTF8')
